@@ -1,0 +1,37 @@
+# Configura el prompt
+[username]
+show_always = true
+style_user = "bold blue"
+style_root = "bold red"
+
+[directory]
+style = "cyan bold"
+
+[time]
+disabled = false
+format = "[$time]($style) "
+style = "bold blue"
+time_format = "%H:%M"
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style) "
+style = "bold cyan"
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[➜](bold red) "
+
+# Información de CPU
+[cpu]
+disabled = false
+format = "CPU [$usage]($style)% " # Muestra el uso de CPU
+threshold = 10 # Muestra el uso de la CPU solo si es mayor al 10%
+style = "bold yellow"
+
+# Información de RAM
+[memory_usage]
+disabled = false
+show_percentage = true
+format = "RAM [$used]($style)/$total ($percentage%) "
+style = "bold green"
