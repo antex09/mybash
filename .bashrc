@@ -66,7 +66,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 alias spico='sudo pico'
 alias snano='sudo nano'
-alias vim='nvim'
+alias vi='nvim'
 
 # To have colors for ls and all grep commands such as grep, egrep and zgrep
 export CLICOLOR=1
@@ -145,9 +145,9 @@ alias upg='sudo apt upgrade -y && sudo nala upgrade -y'
 # For Arch Linux
 alias sps='sudo pacman -Sy'
 alias spy='sudo pacman -S'
-alias syi='sudo yay install -y'
-alias sup='sudo yay update'
-alias sud='sudo yay upgrade -y'
+alias syi='yay -S -y'
+alias yup='yay update'
+alias yud='yay upgrade -y'
 
 # If Fedora
 alias sdi='sudo dnf5 install -y'
