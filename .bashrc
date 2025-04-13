@@ -136,38 +136,32 @@ alias ping='ping -c 10'
 alias less='less -R'
 alias clr='clear'
 
-#My own aliases
+#My own alias's
 alias sag='sudo apt-get'
 alias sai='sudo apt-get install'
 alias upd='sudo apt update && sudo nala update'
 alias upg='sudo apt upgrade -y && sudo nala upgrade -y'
+alias sali='sudo nana install -y'
 
 # For Arch Linux
-alias sps='sudo pacman -Sy'
-alias spy='sudo pacman -S'
-alias syi='yay -S -y'
-alias yup='yay update'
-alias yud='yay upgrade -y'
+alias upp='sudo pacman -Sy -y && yay -Sy -y'
+alias sps='sudo pacman -S'
+alias ys='yay -S -y'
 
 # If Fedora
 alias sdi='sudo dnf5 install -y'
-alias sdup='sudo dnf5 update'
-alias sdug='sudo dnf5 upgrade -y'
+alias dup='sudo dnf5 update'
+alias dug='sudo dnf5 upgrade -y'
 
-# If Debian base
-alias sad='sudo nala update'
-alias sag='sudo nala upgrade -y'
-alias sali='sudo nala install'
 ###
-
 alias multitail='multitail --no-repeat -c'
 alias freshclam='sudo freshclam'
 alias vi='nvim'
-alias svi='sudo vi'
+alias svi='sudo nvim'
 alias vis='nvim "+set si"'
 
 # Change directory aliases
-alias home='cd ~'
+alias ho='cd ~'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias .='cd'
