@@ -137,16 +137,15 @@ alias less='less -R'
 alias clr='clear'
 
 #My own alias's
-alias sag='sudo apt-get'
-alias sai='sudo apt-get install'
+alias sai='sudo apt-get install -y'
 alias upd='sudo apt update && sudo nala update'
 alias upg='sudo apt upgrade -y && sudo nala upgrade -y'
-alias sali='sudo nana install -y'
+alias sali='sudo nala install -y'
 
 # For Arch Linux
 alias upp='sudo pacman -Sy -y && yay -Sy -y'
-alias sps='sudo pacman -S'
-alias ys='yay -S -y'
+alias sp='sudo pacman -Sy'
+alias ys='yay -Sy -y'
 
 # If Fedora
 alias sdi='sudo dnf5 install -y'
@@ -221,11 +220,6 @@ alias checkcommand="type -t"
 
 # Show open ports
 alias openports='netstat -nape --inet'
-
-# Alias's for safe and forced reboots
-alias rebootsafe='sudo shutdown -r now'
-alias rebootforce='sudo shutdown -r -n now'
-
 
 #My own
 alias sr='sudo reboot'
@@ -609,7 +603,7 @@ trim() {
 	var="${var%"${var##*[![:space:]]}"}" # remove trailing whitespace characters
 	echo -n "$var"
 }
-# GitHub Titus Additions
+# GitHub 'Titus Additions'
 
 gcom() {
 	git add .
