@@ -137,10 +137,10 @@ alias less='less -R'
 alias clr='clear'
 
 #My own alias's
-alias sai='sudo apt-get install -y'
+alias sai='sudo apt-get update && sudo apt-get install -y'
 alias upd='sudo apt update && sudo nala update'
 alias upg='sudo apt upgrade -y && sudo nala upgrade -y'
-alias sali='sudo nala install -y'
+alias sali='sudo nala update && sudo nala install -y'
 
 # For Arch Linux
 alias upp='sudo pacman -Sy -y && yay -Sy -y'
